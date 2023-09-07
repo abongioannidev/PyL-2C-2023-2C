@@ -32,6 +32,7 @@
         }
         public void SetRaza(string raza)
         {
+            int numero = 90;
             if (!string.IsNullOrWhiteSpace(raza))
             {
                 this.raza = raza;
