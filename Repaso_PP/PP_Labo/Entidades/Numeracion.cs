@@ -37,8 +37,6 @@
                 this.valor = Numeracion.msgError;
             }
         }
-
-
         public abstract Numeracion CambiarSistemaDeNumeracion(ESistema sistema);
 
         protected virtual bool EsNumeracionValida(string valor)
