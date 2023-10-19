@@ -18,15 +18,10 @@ namespace MisTestUnitarios
         public void AlEnviarElNumeroEnDecimal_SeEsperaObtener_SuEquivalenteEnRomano(int numeroDecimal,string valorEsperado)
         {
             //Arrange
-
             string resultado = string.Empty;
-
             //Act
-
             resultado = Util.ConvertirDecimalARomano(numeroDecimal);
-
             //Assert
-
             Assert.AreEqual(valorEsperado, resultado);
 
         }
@@ -40,11 +35,6 @@ namespace MisTestUnitarios
             resultado = Util.ConvertirDecimalARomano(-90);
 
             //Assert
-
-            
         }
-
-
-
     }
 }
