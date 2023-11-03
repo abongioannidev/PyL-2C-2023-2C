@@ -9,9 +9,6 @@ namespace Entidades
         {
             GestorSql.stringConnection = "Server=.;Database=clase01112023;Trusted_Connection=True;";
         }
-
-
-
         public static string GetDatosPersona(int id)
         {
             SqlConnection connection = new SqlConnection(GestorSql.stringConnection);
