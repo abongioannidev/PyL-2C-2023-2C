@@ -26,11 +26,7 @@ namespace FrmView
 
         private void btnApretar_Click(object sender, EventArgs e)
         {
-
-
             this.tandaPenales.IniciarEnfrentamiento();
-
-
         }
 
         private void MostrarEmpate(string mensaje)
