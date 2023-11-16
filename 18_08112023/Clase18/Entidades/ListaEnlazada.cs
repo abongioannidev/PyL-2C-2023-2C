@@ -1,6 +1,8 @@
 ﻿namespace Entidades
 {
     public delegate bool DelegadoBuscador<T>(T objeto);
+
+
     public class ListaEnlazada<T>
     {
         private Nodo<T>? primerNodo;
@@ -86,7 +88,7 @@
                 ultimoNodo.SiguienteNodo = nuevoNodo;
             }
         }
-
+        
         public T Buscar(DelegadoBuscador<T> buscador)
         {
             Nodo<T>? nodo = this.primerNodo;
@@ -102,7 +104,8 @@
             }
             return default;
         }
-
+       
+        
         public int IndiceDe(DelegadoBuscador<T> buscador)
         {
             Nodo<T>? nodo = this.primerNodo;
@@ -126,7 +129,5 @@
             return indice;
 
         }
-
-
     }
 }
